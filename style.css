@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 40px;
+}
+.container{
+    grid-gap: 10px;
+    grid-template-columns: 1fr 400px 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    display: grid;
+    grid-template-areas: 
+            "header nav sidebar"
+            "header content1 content1"
+            "header row1 row2"
+            "header content2 content2"
+            "header svg1 svg2";
+}
+.header{
+    grid-area: header;
+    border: 1px solid black;
+    background-color: rgb(205, 133, 50);
+}
+.nav{
+    grid-area: nav;
+    border: 1px solid black;
+    height: 150px;
+    background-color: rgb(90, 139, 0);
+}
+.sidebar{
+    grid-area: sidebar;
+    border: 1px solid black;
+    background-color: rgb(39, 25, 9);
+}
+.content1{
+    grid-area: content1;
+    border: 1px solid black;
+    background-color: rgb(34, 10, 23);
+}
+.content2{
+    grid-area: content2;
+    border: 1px solid black;
+    background-color: rgb(49, 72, 95);
+}
+.row1{
+    grid-area: row1;
+    border: 1px solid black;
+    background-color: rgb(75, 39, 39);
+}
+.row2{
+    grid-area: row2;
+    border: 1px solid black;
+    background-color: rgb(77, 30, 30);
+}
+.svg1{
+    grid-area: svg1;
+    border: 1px solid black;
+    background-color: rgb(107, 132, 243);
+}
+.svg2{
+    grid-area: svg2;
+    border: 1px solid black;
+    background-color: rgb(135, 250, 235);
+}
